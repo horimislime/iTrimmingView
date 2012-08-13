@@ -36,7 +36,7 @@
     CGImageRef imageRef = CGImageCreateWithImageInRect(self.draggableImageView.image.CGImage, cropRect);
     UIImage *outputImage = [UIImage imageWithCGImage:imageRef];
     NSData *data = UIImageJPEGRepresentation(outputImage, 1);
-    [data writeToFile:@"/Users/horimi_soichiro/Desktop/image.jpg" atomically:YES];
+    [data writeToFile:@"/Users/horimislime/Desktop/image.jpg" atomically:YES];
 }
 
 - (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {
