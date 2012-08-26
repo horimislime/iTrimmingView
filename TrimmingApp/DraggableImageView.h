@@ -7,30 +7,27 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum{
-    PORTRAIT,
-    LANDSCAPE
+typedef enum
+{
+   PORTRAIT,
+   LANDSCAPE
 }IMAGE_ORIENTATION;
 
-@interface DraggableImageView : UIImageView{
-    
-    
-    CGPoint startLocation;
-    float xMoved,yMoved;
-    
-    CGSize imageSize;
-    CGFloat cropSize;
-    CGFloat initialScale;
+@interface DraggableImageView : UIImageView {
+   CGPoint startLocation;
+   float   xMoved, yMoved;
+   CGSize  imageSize;
+   CGFloat cropSize;
 }
 
-@property(nonatomic, assign) float xMoved,yMoved;
-@property(nonatomic, assign) CGFloat cropSize,initialScale;
-@property(nonatomic, assign) CGSize imageSize;
+@property (nonatomic, assign) float   xMoved, yMoved;
+@property (nonatomic, assign) CGFloat cropSize;
+@property (nonatomic, assign) CGSize  imageSize;
 
-- (id)initWithImage:(UIImage *)image cropSize:(CGFloat)cropSize;
-- (CGFloat)scale;
-- (CGFloat)scaleToFit;
-- (void) correctPosition;
-- (IMAGE_ORIENTATION)orientation;
-- (CGSize)imageSizeOnScreen;
+-(id)               initWithImage: (UIImage *) image cropSize: (CGFloat) cropSize;
+-(CGFloat)          scale;
+-(CGFloat)          initialScale;
+-(void)             correctPosition;
+-(IMAGE_ORIENTATION)orientation;
+-(CGSize)           imageSizeOnScreen;
 @end

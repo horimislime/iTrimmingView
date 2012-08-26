@@ -10,19 +10,19 @@
 #import "DraggableImageView.h"
 #import "OverlayView.h"
 
-@interface ViewController : UIViewController <UIGestureRecognizerDelegate>{
-    IBOutlet DraggableImageView *draggableImageView;
-    IBOutlet OverlayView *overlayView;
-    IBOutlet UIView *cropAreaView;
+@interface ViewController : UIViewController<UIGestureRecognizerDelegate> {
+   IBOutlet DraggableImageView *draggableImageView;
+   IBOutlet OverlayView        *overlayView;
+   IBOutlet UIView             *cropAreaView;
 }
 
 @property (nonatomic, retain) DraggableImageView *draggableImageView;
-@property (nonatomic, retain) OverlayView *overlayView;
+@property (nonatomic, retain) OverlayView        *overlayView;
 
 
-- (IBAction)trim:(id)sender;
-- (IBAction)showPicker:(id)sender;
-- (IBAction)trimSelected:(id)sender;
+-(IBAction)trim: (id) sender;
+-(IBAction)showPicker: (id) sender;
+-(IBAction)trimSelected: (id) sender;
 
-- (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer;
+-(IBAction)handlePinch: (UIPinchGestureRecognizer *) recognizer;
 @end

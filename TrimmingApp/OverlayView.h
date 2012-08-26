@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface OverlayView : UIView{
-    CGPoint startLocation;
+@interface OverlayView : UIView {
+   CGPoint startLocation;
 }
 
 -(float)cropSize;
