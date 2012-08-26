@@ -51,7 +51,7 @@ CGFloat lastScale=1.0f;
 
     if(image!=nil){
         
-        //Correcting orientation of picture taken with built-in camera
+        //Correcting orientation of picture
         UIGraphicsBeginImageContext(image.size);  
         [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];  
         image = UIGraphicsGetImageFromCurrentImageContext();  
@@ -91,21 +91,19 @@ CGFloat lastScale=1.0f;
     lastScale+=recognizer.scale-1.0;
     
     recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
-        recognizer.scale = 1;
+    recognizer.scale = 1;
     
     if([recognizer state]==UIGestureRecognizerStateEnded){
-        CGSize currentFrame=recognizer.view.frame.size;
         
-        if(([draggableImageView orientation]==PORTRAIT && currentFrame.height<self.overlayView.cropSize) || 
-           ([draggableImageView orientation]==LANDSCAPE && currentFrame.width<self.overlayView.cropSize)){
-            
-            CGFloat scale=self.draggableImageView.scaleToFit;
+        float scale=cropAreaView.frame.size.width/draggableImageView.cropSize;
+        if(scale<1.0f){
+            //Animate and scale to fit trimming frame
             CGContextRef context = UIGraphicsGetCurrentContext();
             [UIView beginAnimations:nil context:context];
             [UIView setAnimationDuration:0.2];
             [UIView setAnimationDelegate:self.draggableImageView];
             
-            recognizer.view.transform=CGAffineTransformScale(recognizer.view.transform, scale, scale);
+            recognizer.view.transform=CGAffineTransformScale(recognizer.view.transform, 1/scale, 1/scale);
             [self.draggableImageView correctPosition];
             
             [UIView commitAnimations];

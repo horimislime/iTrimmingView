@@ -17,10 +17,14 @@
 
 - (id)initWithImage:(UIImage *)image cropSize:(CGFloat)size{
     
-    self=[super initWithImage:image];
-    
+//    self=[super initWithImage:image];
     self.cropSize=size;
     self.imageSize=image.size;
+    
+    self=[super initWithFrame:CGRectMake(0,0,imageSize.width, imageSize.height)];
+    [self setImage:image];
+    CGRect newsize=self.frame;
+    
     CGPoint currentCenter=self.center;
     CGFloat x=currentCenter.x-(image.size.width-self.cropSize)/2.0f;
     CGFloat y=currentCenter.y-(image.size.height-self.cropSize)/2.0f;

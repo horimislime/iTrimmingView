@@ -32,4 +32,5 @@ typedef enum{
 - (CGFloat)scaleToFit;
 - (void) correctPosition;
 - (IMAGE_ORIENTATION)orientation;
+- (CGSize)imageSizeOnScreen;
 @end

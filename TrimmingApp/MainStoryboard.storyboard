@@ -70,9 +70,6 @@
         </scene>
     </scenes>
     <classes>
-        <class className="DraggableImageView" superclassName="UIImageView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DraggableImageView.h"/>
-        </class>
         <class className="OverlayView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/OverlayView.h"/>
         </class>
@@ -83,7 +80,6 @@
                 <relationship kind="action" name="trim:"/>
                 <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="cropAreaView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="draggableImageView" candidateClass="DraggableImageView"/>
                 <relationship kind="outlet" name="overlayView" candidateClass="OverlayView"/>
             </relationships>
         </class>
