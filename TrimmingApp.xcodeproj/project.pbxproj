@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1379FB5115E9BBA90096C996 /* TrimmingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1379FB4E15E9BBA90096C996 /* TrimmingViewController.m */; };
+		1379FB5815E9CCA20096C996 /* trim_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F3200715E99B5100384824 /* trim_background.png */; };
 		1389BF1215D93B6700C50DB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1389BF1115D93B6700C50DB7 /* UIKit.framework */; };
 		1389BF1415D93B6700C50DB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1389BF1315D93B6700C50DB7 /* Foundation.framework */; };
 		1389BF1615D93B6700C50DB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1389BF1515D93B6700C50DB7 /* CoreGraphics.framework */; };
@@ -27,6 +29,9 @@
 		1389BF5615D93C8600C50DB7 /* DraggableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1389BF4B15D93C3B00C50DB7 /* DraggableImageView.m */; };
 		1389BF5715D93C8600C50DB7 /* OverlayView.h in Sources */ = {isa = PBXBuildFile; fileRef = 1389BF4C15D93C3B00C50DB7 /* OverlayView.h */; };
 		1389BF5815D93C8600C50DB7 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1389BF4D15D93C3B00C50DB7 /* OverlayView.m */; };
+		13F3200015E9981900384824 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F31FFF15E9981900384824 /* example.png */; };
+		13F3200815E99B5100384824 /* trim_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 13F3200715E99B5100384824 /* trim_background.png */; };
+		13F3205015E99EAC00384824 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 1389BF2015D93B6700C50DB7 /* AppDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1379FB4E15E9BBA90096C996 /* TrimmingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrimmingViewController.m; sourceTree = "<group>"; };
+		1379FB5015E9BBA90096C996 /* TrimmingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrimmingViewController.h; sourceTree = "<group>"; };
 		1389BF0D15D93B6700C50DB7 /* TrimmingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimmingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1389BF1115D93B6700C50DB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1389BF1315D93B6700C50DB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +67,8 @@
 		1389BF4C15D93C3B00C50DB7 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		1389BF4D15D93C3B00C50DB7 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		1389BF5115D93C5100C50DB7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		13F31FFF15E9981900384824 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		13F3200715E99B5100384824 /* trim_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trim_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,8 @@
 		1389BF0215D93B6700C50DB7 = {
 			isa = PBXGroup;
 			children = (
+				13F31FFF15E9981900384824 /* example.png */,
+				13F3200715E99B5100384824 /* trim_background.png */,
 				1389BF5115D93C5100C50DB7 /* QuartzCore.framework */,
 				1389BF1715D93B6700C50DB7 /* TrimmingApp */,
 				1389BF1015D93B6700C50DB7 /* Frameworks */,
@@ -120,6 +131,8 @@
 		1389BF1715D93B6700C50DB7 /* TrimmingApp */ = {
 			isa = PBXGroup;
 			children = (
+				1379FB4E15E9BBA90096C996 /* TrimmingViewController.m */,
+				1379FB5015E9BBA90096C996 /* TrimmingViewController.h */,
 				1389BF4815D93C3B00C50DB7 /* ViewController.h */,
 				1389BF4915D93C3B00C50DB7 /* ViewController.m */,
 				1389BF4A15D93C3B00C50DB7 /* DraggableImageView.h */,
@@ -215,8 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1379FB5815E9CCA20096C996 /* trim_background.png in Resources */,
 				1389BF1C15D93B6700C50DB7 /* InfoPlist.strings in Resources */,
 				1389BF4715D93BA200C50DB7 /* MainStoryboard.storyboard in Resources */,
+				13F3200015E9981900384824 /* example.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F3200815E99B5100384824 /* trim_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F3205015E99EAC00384824 /* AppDelegate.h in Sources */,
 				1389BF5315D93C8600C50DB7 /* ViewController.h in Sources */,
 				1389BF5415D93C8600C50DB7 /* ViewController.m in Sources */,
 				1389BF5515D93C8600C50DB7 /* DraggableImageView.h in Sources */,
@@ -258,6 +275,7 @@
 				1389BF5815D93C8600C50DB7 /* OverlayView.m in Sources */,
 				1389BF1E15D93B6700C50DB7 /* main.m in Sources */,
 				1389BF2215D93B6700C50DB7 /* AppDelegate.m in Sources */,
+				1379FB5115E9BBA90096C996 /* TrimmingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +359,7 @@
 		1389BF4115D93B6700C50DB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrimmingApp/TrimmingApp-Prefix.pch";
 				INFOPLIST_FILE = "TrimmingApp/TrimmingApp-Info.plist";
@@ -352,6 +371,7 @@
 		1389BF4215D93B6700C50DB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TrimmingApp/TrimmingApp-Prefix.pch";
 				INFOPLIST_FILE = "TrimmingApp/TrimmingApp-Info.plist";
@@ -413,6 +433,7 @@
 				1389BF4215D93B6700C50DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1389BF4315D93B6700C50DB7 /* Build configuration list for PBXNativeTarget "TrimmingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +442,7 @@
 				1389BF4515D93B6700C50DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -36,7 +36,7 @@
     CGImageRef imageRef = CGImageCreateWithImageInRect(self.draggableImageView.image.CGImage, cropRect);
     UIImage *outputImage = [UIImage imageWithCGImage:imageRef];
     NSData *data = UIImageJPEGRepresentation(outputImage, 1);
-    [data writeToFile:@"/Users/horimislime/Desktop/image.jpg" atomically:YES];
+    [data writeToFile:@"/Users/horimislime/Desktop/example.jpg" atomically:YES];
 }
 
 - (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer {
@@ -49,7 +49,7 @@
     [super viewDidLoad];
     self.overlayView.hidden=NO;
     
-    UIImage *image=[UIImage imageNamed:@"example.jpg"];
+    UIImage *image=[UIImage imageNamed:@"example.png"];
     CGRect frame=self.draggableImageView.frame;
     frame.size.width=image.size.width;
     frame.size.height=image.size.height;

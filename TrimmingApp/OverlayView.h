@@ -10,13 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface OverlayView : UIView{
-    CGRect clipArea;
     CGPoint startLocation;
-    
-    float cropAreaSize;
-    CGPoint cropCenter;
 }
-@property(nonatomic, assign) CGPoint cropCenter;
-@property(nonatomic, assign) float cropAreaSize;
+
+-(float)cropSize;
 
 @end
